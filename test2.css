@@ -1,0 +1,37 @@
+.switchbox{
+	position: absolute;
+	top: 45%;
+	left: 45%;
+}
+
+input{
+	position: relative;
+	width: 6rem;
+	height: 3rem;
+	-webkit-appearance:none;
+	background-color: #c6c6c6;
+	outline: none;
+	border-radius: 20px;
+	box-shadow: 0 0 1px 1px black;
+}
+
+input:checked{
+	background-color: green;
+}
+
+input:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0 0 1px 2px black;
+	transition: 0.7s;
+}
+
+input:checked:before{
+	left: 3rem;
+}
